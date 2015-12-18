@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/styleZy.css">
+	<link rel="stylesheet" type="text/css" href="css/styleYWGL.css">
+</head>
+<body onselectstart="return false">
+    <!--===================头部开始部分-->
+	<div id="topbox">
+		<div class="toplogo"><!--==============logo部分-->
+    	     <div class="logo"><img src="images/logo.png"></div>
+             <div class="ver">企业版</div>
+        </div>
+        <!--===================右边管理员部分-->
+        <div class="topright btnJianb">
+            <img class="before"src="images/hito.png" width="20" />
+        	<p>管理员</p>
+            <img class="after" src="images/san.png" width="10" />
+            <div class="login">
+            	<div>修改密码</div>
+            	<div>个人资料</div>
+            	<div>退出系统</div>
+            </div>
+        </div>
+        <ul class="topnav"><!--===================nav部分开始-->
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/sb.gif">
+	        		<p>故障申报</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/whlxd.png">
+	        		<p>维护联单</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/whbg.png">
+	        		<p>维护报告</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/bxlxd.png">
+	        		<p>维修联单</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/wxbg.png">
+	        		<p>维修报告</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/cgsqd.png">
+	        		<p>采购申请</p>
+	        	</a>
+        	</li>
+        	<li class="btnJianb">
+	        	<a href="javascript:void(0)">
+	        		<img src="images/xjbg.png">
+	        		<p>巡检报告</p>
+	        	</a>
+        	</li>
+        </ul><!--===================nav部分结束-->
+	</div><!--===================头部部分结束-->
+
+    <div id="midbox"><!--===================主体midbox部分开始-->
+	     <div class="leftbox"><!--左边-->
+	     	<input class="search" type="text" value="Search..."/>
+	     	<p class="fenggeLine"></p><!--==分割线-->
+	     	<ul class="leftbtn">
+	     		<li class="active">
+	     		    <img src="images/left-01index.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       首&nbsp;&nbsp;&nbsp;&nbsp;页
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-02xsys.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       系统管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-03assets.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       设备管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-04rmb.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       个人业务
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-05f5.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       运维管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-06right.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       流程管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-07information.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       信息管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-08car.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       供 应 商
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-09file.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       文档管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-10zip.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       项目管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-11new.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       消息管理
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-12xy.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       数据分析
+	     		    </a>
+	     		</li>
+	     		<li>
+	     		    <img src="images/left-13man.png" width="20" />
+	     		    <a href="javascript:void(0)">
+	     		       个人信息
+	     		    </a>
+	     		</li>
+	     	</ul>
+	     	<p class="fenggeLine"></p><!--==分割线-->
+	     </div><!--===================左边结束-->
+ <!--=============选项卡切换=================================-->
+	     <div class="switchTab">
+		     <div class="mainbox"><!--首页中间盒子开始-->
+		     	 	<div class="mbox1" ondragstart="return false"><!--禁拖超链接-->
+		     	          	<a href="javascript:void(0)" class="xiangXi">
+			     	          	<img src="images/boxicon01.png">
+			     	          	<p>
+			     	          	   <span class="zi">待处理</span>
+			     	          	   <span class="shu">56</span>
+			     	          	</p>
+		     	          	</a>
+		     	          	<div class="xiangmu">
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          		 <a href="javascript:void(0)" class="menico"></a>
+		     	          	</div>
+		     	     </div><!--main box1结束-->
+		     	     <div class="mbox2">
+		     	     	<ul class="textboxtitle">
+		     	     		<li class="hover">待处理</li>
+		     	     		<li>维护中</li>
+		     	     		<li>待确认</li>
+		     	     		<li>待评价</li>
+		     	     		<li>已完成</li>
+		     	     		<a href="javascript:void(0)">更多...</a>
+		     	     	</ul>
+		     	     	<div class="cenTable">
+		     	     		<div class="cen">
+ <!--=========复制代码==================================-->
+                                 <div class="m_row">
+                	<div class="m_row_in m_row1">
+                    	<div class="m_row_l"><span>事件标题：</span>无法连接局域网无法连接局域网无法连接局域网无法连接局域网</div>                        
+                        <div class="m_row_m"><span>事件类型：</span>网络异常</div>
+                        <div class="m_row_r"><span>发起时间：</span>2015-10-10-18:00</div>
+                    </div>
+                    <div class="m_row_in m_row2">
+                    	<div class="m_row_l"><span>设备名称：</span>三星网络打印机</div>
+                        <div class="m_row_m"><span>优&nbsp;先&nbsp;级：</span>优先级</div>
+                        <div class="m_row_r"><span>发&nbsp;起&nbsp;人：</span>管理员</div>
+                    </div>
+                </div>
+                <div class="m_row">
+                	<div class="m_row_in m_row1">
+                    	<div class="m_row_l"><span>事件标题：</span>无法连接局域网无法连接局域网无法连接局域网无法连接局域网</div>                        
+                        <div class="m_row_m"><span>事件类型：</span>网络异常</div>
+                        <div class="m_row_r"><span>发起时间：</span>2015-10-10-18:00</div>
+                    </div>
+                    <div class="m_row_in m_row2">
+                    	<div class="m_row_l"><span>设备名称：</span>三星网络打印机</div>
+                        <div class="m_row_m"><span>优&nbsp;先&nbsp;级：</span>优先级</div>
+                        <div class="m_row_r"><span>发&nbsp;起&nbsp;人：</span>管理员</div>
+                    </div>
+                </div>
+                <div class="m_row">
+                	<div class="m_row_in m_row1">
+                    	<div class="m_row_l"><span>事件标题：</span>无法连接局域网无法连接局域网无法连接局域网无法连接局域网</div>                        
+                        <div class="m_row_m"><span>事件类型：</span>网络异常</div>
+                        <div class="m_row_r"><span>发起时间：</span>2015-10-10-18:00</div>
+                    </div>
+                    <div class="m_row_in m_row2">
+                    	<div class="m_row_l"><span>设备名称：</span>三星网络打印机</div>
+                        <div class="m_row_m"><span>优&nbsp;先&nbsp;级：</span>优先级</div>
+                        <div class="m_row_r"><span>发&nbsp;起&nbsp;人：</span>管理员</div>
+                    </div>
+                </div>
+                <div class="m_row">
+                	<div class="m_row_in m_row1">
+                    	<div class="m_row_l"><span>事件标题：</span>无法连接局域网无法连接局域网无法连接局域网无法连接局域网</div>                        
+                        <div class="m_row_m"><span>事件类型：</span>网络异常</div>
+                        <div class="m_row_r"><span>发起时间：</span>2015-10-10-18:00</div>
+                    </div>
+                    <div class="m_row_in m_row2">
+                    	<div class="m_row_l"><span>设备名称：</span>三星网络打印机</div>
+                        <div class="m_row_m"><span>优&nbsp;先&nbsp;级：</span>优先级</div>
+                        <div class="m_row_r"><span>发&nbsp;起&nbsp;人：</span>管理员</div>
+                    </div>
+                </div>
+ <!--=========复制代码结束==================================-->
+		     	     		</div>
+		     	     		<div class="cen">
+		     	     		维护中
+		     	     			
+		     	     		</div>
+		     	     		<div class="cen">
+		     	     		待确认
+		     	     		    
+		     	     		</div>
+		     	     		<div class="cen">
+		     	     		待评价
+		     	     		    
+		     	     		</div>
+		     	     		<div class="cen">
+		     	     		已完成
+		     	     			
+		     	     		</div>
+		     	     	</div>
+		     	     </div><!--box2结束-->
+		     	     <div class="fenge"></div>
+		     	     <div class="mbox3">
+		     	     	<ul class="textboxtitle">
+		     	     		<li class="hover">公告</li>
+		     	     		<li>排班</li>
+		     	     		<a href="javascript:void(0)">更多...</a>
+		     	     	</ul>
+		     	     	<div class="cenTable">
+		     	     		<div class="cen">
+  <!--====================复制代码开始=============================-->
+		     	     		      <div class="m_row">
+                        <div class="m_row_in m_row1">
+                            <div class="m_row_l"><span>公告标题：</span>国庆放假通知</div>                        
+                            <div class="m_row_m"><span>重要等级：</span>普通</div>
+                            <div class="m_row_r"><span>发布时间：</span>2015-09-28-18:00</div>
+                        </div>
+                        <div class="m_row_in m_row2">
+                            <div class="m_row_ll"><span>公告内容：</span>10月1日至7日放假调休，共7天。10月10日(星期六)上班。</div>
+                            <div class="m_row_r"><span>发&nbsp;布&nbsp;人：</span>管理员</div>
+                        </div>
+                    </div>
+                    <div class="m_row">
+                        <div class="m_row_in m_row1">
+                            <div class="m_row_l"><span>公告标题：</span>国庆放假通知</div>                        
+                            <div class="m_row_m"><span>重要等级：</span>普通</div>
+                            <div class="m_row_r"><span>发布时间：</span>2015-09-28-18:00</div>
+                        </div>
+                        <div class="m_row_in m_row2">
+                            <div class="m_row_ll"><span>公告内容：</span>10月1日至7日放假调休，共7天。10月10日(星期六)上班。</div>
+                            <div class="m_row_r"><span>发&nbsp;布&nbsp;人：</span>管理员</div>
+                        </div>
+                    </div>
+                    <div class="m_row">
+                        <div class="m_row_in m_row1">
+                            <div class="m_row_l"><span>公告标题：</span>国庆放假通知</div>                        
+                            <div class="m_row_m"><span>重要等级：</span>普通</div>
+                            <div class="m_row_r"><span>发布时间：</span>2015-09-28-18:00</div>
+                        </div>
+                        <div class="m_row_in m_row2">
+                            <div class="m_row_ll"><span>公告内容：</span>10月1日至7日放假调休，共7天。10月10日(星期六)上班。</div>
+                            <div class="m_row_r"><span>发&nbsp;布&nbsp;人：</span>管理员</div>
+                        </div>
+                    </div>
+                    <div class="m_row">
+                        <div class="m_row_in m_row1">
+                            <div class="m_row_l"><span>公告标题：</span>国庆放假通知</div>                        
+                            <div class="m_row_m"><span>重要等级：</span>普通</div>
+                            <div class="m_row_r"><span>发布时间：</span>2015-09-28-18:00</div>
+                        </div>
+                        <div class="m_row_in m_row2">
+                            <div class="m_row_ll"><span>公告内容：</span>10月1日至7日放假调休，共7天。10月10日(星期六)上班。</div>
+                            <div class="m_row_r"><span>发&nbsp;布&nbsp;人：</span>管理员</div>
+                        </div>
+                    </div>
+  <!--====================复制代码结束=============================-->
+		     	     		</div>
+		     	     		<div class="cen">
+		     	     		   排班
+		     	     		</div>
+		     	     	</div>
+		     	     </div>
+		     </div><!--首页中间盒子结束-->
+		     <div class="rightbox"><!--右边开始-->
+		     	<div class="rdate">
+		     		<span class="zhou"></span>
+		     		<span class="riqi"></span>
+		     		<img src="images/imgxy.png" width="190" />
+		     	</div>
+		     	<p class="fenggeLine"></p><!--==分割线-->
+		     	<div class="rlist1"><!--==右边第二块待审核-->
+		     		<p class="title">待审核</p>
+		     		<div class="overflow"><!--==滚动层裁剪层-->
+		     			<div class="ove_mid"><!--==滚动层内容-->
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div>
+		     				<div class="r_row">
+		     				     <a href="javascript:void(0)">
+		     				           故障上报审核
+		     				     </a>
+		     				     <span>05</span>
+		     				</div><!--==右边第二块待审核结束-->
+		     			</div><!--==滚动层内容结束-->
+		     		</div><!--==滚动层裁剪结束-->
+		     	    <div class="scroTiao"><!--==滚动杆-->
+		     	    	<div class="scroGan"></div>
+		     	    </div><!--==滚动杆-->
+		     	</div>
+		     	<p class="fenggeLine"></p><!--==分割线-->
+		     	<div class="rlist2"><!--==检巡信息-->
+		     		 <p class="title">
+		     		    检巡信息
+		     		 </p>
+		     		 <div class="jxxx_mid">
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 	 <div class="r_row">
+		     		 	     <a href="javascript:void(0)">巡检信息</a>
+		     		 	     <span>2015-06-06</span>
+		     		 	     <i class="bgcolor"></i>
+		     		 	 </div>
+		     		 </div>
+		     		 <a href="javascript:void(0)" class="genduo">更多...</a>
+		     	</div><!--==检巡信息结束-->
+		     	<p class="fenggeLine"></p><!--==分割线-->
+		     </div><!--==================右边结束-->
+	     </div><!--============选项卡切换首页结束=======-->
+	     <div class="switchTab">系统管理</div>
+	     <div class="switchTab">设备管理</div>
+	     <div class="switchTab">个人业务</div>
+	     <div class="switchTab"><!--事件管理页-->
+	     	 <div class="ywglMain"><!--=事件管理页内容main盒子==-->
+          	 	  	<div class ="nav"><!--==一级导航开始==-->
+	     	 	  			<div class="nav_mid_left">
+	     	 	  				<a href="#">运维管理</a>
+	     	 	  			</div>
+	     	 	  			<ul class="nav_mid_ul">
+	     	 	  				<li><a href="#">维护授权</a></li>
+	     	 	  				<li><a href="#">维护配置</a></li>
+	     	 	  				<li><a href="#">事件管理</a></li>
+	     	 	  				<li><a href="#">故障升级</a></li>
+	     	 	  				<li><a href="#">维护查询</a></li>
+	     	 	  				<li><a href="#">维修查询</a></li>
+	     	 	  				<li><a href="#">维护知识</a></li>
+	     	 	  				<li><a href="#">巡检指标</a></li>
+	     	 	  				<li><a href="#">巡检模板</a></li>
+	     	 	  				<li><a href="#">巡检查询</a></li>
+	     	 	  				<li class="last"></li>
+	     	 	  			</ul>
+	     	 	  	</div><!--==一级导航结束==-->
+	     	 	  	<ul class="ywgl_mid"><!--==一级导航对应内容==-->
+	     	 	  	   <li class="ywgl_li">维护授权</li>
+	     	 	  	   <li class="ywgl_li">维护配置</li>
+	     	 	  	   <li class="ywgl_li"><!--二级事件管理页-->
+	     	 	  	   	   <ul class="sjgl_ul"><!--二级导航-->
+	     	 	  	   	   	  <li class="sjgl_li hover">所有事件</li>
+	     	 	  	   	   	  <li class="sjgl_li">待处理事件</li>
+	     	 	  	   	   	  <li class="sjgl_li">处理中</li>
+	     	 	  	   	   	  <li class="sjgl_li">已完成</li>
+	     	 	  	   	   </ul><!--二级导航结束-->
+	     	 	  	   	   <!--二级导航对应内容-->
+	     	 	  	   	   <ul class="sjgl_mid">
+	     	 	  	   	   	  <li class="sjgl_mid_li">
+<!--========================运维管理所有事件页==============-->
+ <div class="form">
+ 	<form action="">
+ 	   主治机构 <input type="text" class="inp zzjg text" value="组织机构">
+ 	   发起人 <input type="text" class="inp fqr text" value="请输入...">
+ 	   优先级 <input type="text" class="inp yxj text" value="所有"><br/>
+ 	   起始时间 <input type="date" class="inp fqsj"> 结束至
+ 	   <input type="date" class="inp jssj">
+ 	   <input type="button" class="btn ss" value="搜索">
+ 	   <input type="reset" class="btn cz">
+ 	</form>
+ </div>
+ <p class="eventInfo"><span></span>事件信息</p>
+ <table class="eventMinute" cellspacing=0> 	 
+     <tr>
+ 	   <td>表格内容</td>
+ 	 </tr>
+ </table>
+<!--========================运维管理所有事件页结束==============-->
+	     	 	  	   	   	  </li>
+	     	 	  	   	   	  <li class="sjgl_mid_li">待处理事件</li>
+	     	 	  	   	   	  <li class="sjgl_mid_li">处理中</li>
+	     	 	  	   	   	  <li class="sjgl_mid_li">以完成</li>
+	     	 	  	   	   </ul><!--二级导航对应内容结束-->
+	     	 	  	   </li><!--二级事件管理页结束-->
+	     	 	  	   <li class="ywgl_li">故障升级</li>
+	     	 	  	   <li class="ywgl_li">维护查询</li>
+	     	 	  	   <li class="ywgl_li">维修查询</li>
+	     	 	  	   <li class="ywgl_li">维护知识</li>
+	     	 	  	   <li class="ywgl_li">巡检指标</li>
+	     	 	  	   <li class="ywgl_li">巡检模板</li>
+	     	 	  	   <li class="ywgl_li">巡检查询</li>
+	     	 	  	</ul><!--==一级导航对应内容结束==-->
+	     	 </div>
+	     </div><!--事件管理页结束-->
+	     <div class="switchTab">流程管理</div>
+	     <div class="switchTab">供应商</div>
+	     <div class="switchTab">信息管理</div>
+	     <div class="switchTab">文档管理</div>
+	     <div class="switchTab">项目管理</div>
+	     <div class="switchTab">消息管理</div>
+	     <div class="switchTab">数据分析</div>
+	     <div class="switchTab">个人信息</div>
+    </div><!--===================主体midbox头部部分结束-->
+</body>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+</html>
+

@@ -1,0 +1,172 @@
+*{
+	padding: 0px;
+	margin:0px;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family:"Microsoft Yahei";
+}
+#viewer div.page{
+	background-position: center;
+}
+/*第一页*/
+#viewer div.page img.logo{
+	width: 200px;
+	margin: 20px;
+}
+#viewer div.page img.page1cen{
+    position: absolute;
+    top:100px;
+    width: 700px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin:auto;
+}
+#viewer div.page p.zi{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background-color: #D97F5C;
+	height:30px;
+	width: 100%;
+	line-height:30px;
+	text-align: center;
+	font-size: 14px;
+	color:#fff;
+	font-weight:600;
+}
+/*第二页*/
+#viewer div.page2 img.dh{
+position: absolute;
+	left: 0px;
+	right: 0px;
+	top:50%;
+	bottom: 0px;
+	margin:0px auto;
+	width: 650px;
+	opacity:0;
+	transition:1s all;
+}
+#viewer div.page2.ani img.dh{
+	top:10%;
+	opacity:1;
+}
+/*第三页*/
+#viewer div.page3 img.dh{
+    position: absolute;
+	left:2%;
+	top:30%;
+	width: 650px;
+	opacity:0;
+	transition:1s all;
+}
+#viewer div.page3.ani img.dh{
+	left:8%;
+	opacity:1;
+}
+/*第四页*/
+#viewer div.page4 img.dh{
+    position: absolute;
+	left:5%;
+	top:45%;
+	width:350px;
+}
+#viewer div.page4 div.dh{
+	position: absolute;
+	letter-spacing:2px;
+	width:683px;
+	height:103px;
+	line-height:30px;
+	color: #fff;
+	background:rgba(0,0,0,0.0);
+	right:3%;
+	bottom:-50px;
+	transition:1s all;
+	padding: 35px 20px;
+}
+#viewer div.page4.ani div.dh{
+	bottom:10%;
+	background:rgba(0,0,0,0.4);
+}
+/*第五页*/
+#viewer div.page5 div.dh{
+	position: absolute;
+	letter-spacing:2px;
+	width: 100%;
+	height:103px;
+	left: 0px;
+	bottom:-131px;
+	line-height:30px;
+	color: #fff;
+	background:rgba(0,0,0,0.3);
+	transition:1s all;
+	padding: 35px 20px;
+}
+#viewer div.page5 div.dh div.cen img{
+	height: 120px;
+}
+#viewer div.page5.ani div.dh{
+	bottom:0px;
+}
+/*第六页*/
+#viewer div.page6 img.dh{
+    position: absolute;
+	left:2%;
+	top:40%;
+	width: 650px;
+	opacity:0;
+	transition:1s all;
+}
+#viewer div.page6.ani img.dh{
+	left:8%;
+	opacity:1;
+}
+/*第七页*/
+#viewer div.page7 img.dh{
+    position: absolute;
+	width: 650px;
+	opacity: 0;
+	transition:1s all;
+}
+#viewer div.page7 img.dh1{
+    left:0px;
+    top: 40%;
+    width:540px;
+}
+#viewer div.page7 img.dh2{
+    right:3%;
+    bottom:-15px;
+    width:380px;
+}
+#viewer div.page7.ani img.dh1{
+    left:6%;
+    opacity: 1;
+}
+#viewer div.page7.ani img.dh2{
+    bottom:0px;
+    opacity: 1;
+}
+
+ul.ulsy{
+	z-index:1;
+	top: 38%;
+	left: 15px;
+	background-color:rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+ul.ulsy li{
+	width:15px;
+	height:15px;
+	border-radius:10px;
+	margin:10px 2px;
+	border:1px solid #ccc;
+}
+ul.ulsy li.hover{
+	background: #fff;
+	border: 1px solid #abcdef;
+}

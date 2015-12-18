@@ -1,0 +1,53 @@
+*{
+	margin:0px;
+	padding: 0px;
+	border:0px;
+	list-style: none;
+}
+body{
+	background: #eee;
+}
+img{
+	display: block;
+}
+/*#warp{
+	position: relative;
+	width:850px;
+	height:500px;
+	margin: 50px auto;
+	background: #f00;
+}*/
+#warp li{
+	float: left;
+	background: #fff;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	margin:10px;
+	position: absolute;
+	width: 125px;
+	height: 125px;
+}
+#warp li img{
+	width: 115px;
+	height: 115px;
+	margin: 5px;
+}
+input.cc{
+	width: 100px;
+	height: 30px;
+	border:1px solid #ddd;
+	box-shadow: 0px 0px 3px #ccc;
+	border-radius: 3px;
+	background:rgba(255,255,255,0.5);
+	color:#333;
+	display: none;
+	position: absolute;
+	z-index: 100;
+}
+#zhtp_left{
+	top:200px;
+	right: 200px;
+}
+#zhtp_right{
+	top:200px;
+	right: 80px;
+}

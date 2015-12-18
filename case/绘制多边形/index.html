@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+        	margin:0px;
+        	padding: 0px;
+        }
+        #warp{
+          width: 1150px;
+          height: 600px;
+          position:absolute;
+          left: 0px;
+          top: 0px;
+          bottom: 0px;
+          right: 0px;
+          margin: auto;
+          background:rgba(255,255,255,0.2);
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px #fff;
+          border:1px solid #666;
+        }
+        #liu div{
+        	height: 100px;
+        	background: rgba(0,0,0,0.3);
+        	position: absolute;
+        	top:150px;
+        	left: 200px;
+        	width: 100px;
+        }
+        #liu div:nth-child(1){
+            transform:rotate(60deg);
+        }
+        #liu div:nth-child(2){
+            transform:rotate(120deg);
+        }
+        #liu div:nth-child(3){
+            transform:rotate(180deg);
+        }
+        #ba div{
+        	position: absolute;
+        	left: 500px;
+        	top: 150px;
+        	height: 100px;
+        	background: rgba(0,0,0,0.3);
+        }
+        #ba div:nth-child(1){
+        	transform:rotate(45deg);
+        }
+         #ba div:nth-child(2){
+        	transform:rotate(90deg);
+        }
+         #ba div:nth-child(3){
+        	transform:rotate(135deg);
+        }
+         #ba div:nth-child(4){
+        	transform:rotate(180deg);
+        }
+        #shiliu{
+        	width:200px;
+        	height: 200px;
+        	position:absolute;
+        	left: 900px;
+        	top:150px;
+        	transform-style:preserve-3D;
+            transform:rotate(1deg);
+            transform-origin:20px 100px;
+            -webkit-animation:myss 1.5s linear infinite;
+        }
+        #shiliu div{
+        	position: absolute;
+        	height:200px;
+        	background:rgba(0,0,0,0.3);
+        }
+        #shiliu div:nth-child(1){
+        	transform:rotate(22.5deg);
+        }
+
+        #shiliu div:nth-child(2){
+        	transform:rotate(45deg);
+        }
+        #shiliu div:nth-child(3){
+        	transform:rotate(67.5deg);
+        }
+        #shiliu div:nth-child(4){
+        	transform:rotate(90deg);
+        }
+        #shiliu div:nth-child(5){
+        	transform:rotate(112.5deg);
+        }
+        #shiliu div:nth-child(6){
+        	transform:rotate(135deg);
+        }
+        #shiliu div:nth-child(7){
+        	transform:rotate(157.5deg);
+        }
+        #shiliu div:nth-child(8){
+        	transform:rotate(180deg);
+        }
+        @-webkit-keyframes myss{
+			0%{
+				  transform:rotate(0deg) rotatez(0deg);margin-left:0px;
+				}  
+			100%{transform:rotate(360deg) rotatez(360deg);margin-left:0px;}
+		}
+    </style>
+</head>
+<body>
+<div id="warp">
+  
+  <div id="liu">
+     <div></div>
+     <div></div>
+     <div></div>
+  </div>
+  <div id="ba">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+  </div>
+   <div id="shiliu">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+	var div=document.getElementById("liu");
+	var div1=div.getElementsByTagName("div");
+	for(var i=0;i<div1.length;i++){
+		div1[i].style.width=100*Math.sqrt(3)/3+"px";
+	}
+	var divba=document.getElementById("ba");
+	var div2=divba.getElementsByTagName("div");
+	for(var i=0;i<div2.length;i++){
+		div2[i].style.width=0.4142135623731*50*2+"px";
+	}//width=1/2*tanx度  *  1/2*height  *2;  八边形直接搜tan22.5是多少就行
+	var divshiliu=document.getElementById("shiliu");
+	var div3=divshiliu.getElementsByTagName("div");
+	for(var i=0;i<div3.length;i++){
+		div3[i].style.width=200*0.19891236737966+"px";
+		console.log(div3[i].style.webkitTransformRotate);   
+	}
+</script>
+</html>

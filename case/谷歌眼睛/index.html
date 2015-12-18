@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>反正弦</title>
+	<style type="text/css">
+		*{
+		   margin:0px;
+		   padding:0px;
+		}
+        #warp{
+        	width: 176px;
+        	height: 91px;
+        	position:absolute;
+        	top:0px;
+        	bottom:0px;
+        	left:0px;
+        	right:0px;
+        	margin:auto;
+        	background:url("265.png");
+        }
+        #warp div.div1{
+        	position: absolute;
+        	background: #000;
+        	width:4px;
+        	height:4px;
+        	border-radius: 5px;
+        }
+        #warp div.div1:nth-child(1){
+        	top:42px;
+        	left:115px;
+        }
+        #warp div.div1:nth-child(2){
+        	top:42px;
+        	left:135px;
+        }
+	</style>
+</head>
+<body>
+	<div id="warp">
+		<div class="div1"></div>
+		<div class="div1"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	window.onload=function(){
+		var warp=document.getElementById("warp");
+		var yees=warp.getElementsByTagName('div');
+		var r=5;
+		//了两个眼睛原来定位的值
+		var yee1L=115;
+		var yee1T=42;
+		var yee2T=42;
+		var yee2L=135;
+
+		document.onmousemove=function(e){
+			var e=e||window.event;
+
+			zhuanYees(yees[0],yee1L,yee1T);
+			zhuanYees(yees[1],yee2L,yee2T);
+
+
+            function zhuanYees(obj,YL,YT){
+
+				var a=Math.abs(e.pageX-(obj.offsetLeft+warp.offsetLeft));
+				var b=Math.abs(e.pageY-(obj.offsetTop+warp.offsetTop));
+			
+				if(e.pageX>obj.offsetLeft+warp.offsetLeft&&e.pageY>obj.offsetTop+warp.offsetTop){
+
+					var moveTop=Math.cos(Math.atan(a/b))*r;
+					var moveLeft=Math.sin(Math.atan(a/b))*r;
+
+				}else if(e.pageX<obj.offsetLeft+warp.offsetLeft&&e.pageY>obj.offsetTop+warp.offsetTop){
+
+					var moveTop=Math.cos(Math.atan(a/b))*r;
+					var moveLeft=Math.sin(Math.atan(a/b))*-r;
+
+				}else if(e.pageX<obj.offsetLeft+warp.offsetLeft&&e.pageY<obj.offsetTop+warp.offsetTop){
+
+					var moveTop=Math.cos(Math.atan(a/b))*-r;
+					var moveLeft=Math.sin(Math.atan(a/b))*-r;
+
+				}else if(e.pageX>obj.offsetLeft+warp.offsetLeft&&e.pageY<obj.offsetTop+warp.offsetTop){
+
+					var moveTop=Math.cos(Math.atan(a/b))*-r;
+					var moveLeft=Math.sin(Math.atan(a/b))*r;
+
+				}
+				 
+					obj.style.left=moveLeft+YL+"px";
+					obj.style.top=moveTop+YT+"px";
+			
+
+            }//zhuanyees函数
+			
+		}//onmousemove
+	}//window.onload
+/*
+ 当鼠标移动的时候调用函数
+ 函数参数一 转动的对象
+     参数二 对象原来定位的left值
+     参数三 对象原来的top值
+ 第一步 获取鼠标到点(眼睛)的水平距离  和   垂直距离
+ 第二步 判断鼠标是在哪个位置(左上 左下 右下 右上)
+        if(右下){水平距离和垂直距离都是正的}
+        else if(右上){水平距离是正的垂直距离是负的(移动的top*-r)}
+        else if(左下){水平距离是负的垂直距离是正的(移动的left*-r)}
+        else if(左上){水平距离和垂直距离都是负的 都要*-r}
+        (这种方法算的角度是0=90度的不判段的话就会在0到90一直循环)
+ 算法:  先用反三角函数通过已知的两条边算出tan角度
+        定义个圆的半径(半径就是小三角的斜边) 
+        通过三角函数计算出对应的小邻边与小对边
+        拿到值分别加上原来定位的值 赋给对象
+*/
+</script>
+</html>

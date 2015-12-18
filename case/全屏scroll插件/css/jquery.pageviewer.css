@@ -1,0 +1,18 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.ui-pageViewer{
+	width: 100%;
+	height: 100%;
+	position:relative;/*用absolute 在谷歌上页面会一闪一闪的*/
+	left: 0px;
+	top: 0px;
+}
+.ui-pageViewer .ui-page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}

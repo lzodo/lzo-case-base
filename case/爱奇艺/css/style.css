@@ -1,0 +1,233 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+.clear{
+	clear: both;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	font-family: "Microsoft Yahei";
+	height: 800px;
+	background: #fff;
+}
+/*status状态栏样式*/
+#status div.stat_mid{
+	width: 1180px;
+	height: 45px;
+	margin:0px auto;
+	position:relative;
+}
+#status div.stat_mid h1{
+	float: left;
+	height: 45px;
+	padding:4px 45px 0px 0px;
+}
+#status div.stat_mid a.nav_up{
+	display: block;
+	width: 88px;
+	float: left;
+	height: 45px;
+	background:url("../images/navtitle_black1.png") no-repeat center -110px;
+}
+#status div.stat_mid a.nav_up p.nav{
+	width: 1180px;
+	height: 115px;
+	background:#232323;
+	position:absolute;
+	top: 45px;
+	left: 0px;
+	border-top:1px solid #181818;
+	display: none;
+}
+#status div.stat_mid form{
+	position:absolute;
+	left:270px;
+	top:8px;
+}
+#status div.stat_mid form input.statu_text{
+	width:369px;
+	height: 28px;
+	border:1px solid #6DA500;
+	text-indent: 3px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	outline: none;
+}
+#status div.stat_mid div.liShi{
+    width: 369px;
+    border: 1px solid #6DA500;
+    position: absolute;
+    left: 270px;
+    top: 37px;
+    display: none;
+}
+#status div.stat_mid div.liShi p{
+	width:359px;
+	height:20px;
+	background:#eee;
+	padding: 5px;
+	color:#444;
+	font-size: 12px;
+}
+#status div.stat_mid div.liShi p:hover{
+	background:#fff;
+}
+
+#status div.stat_mid form input.statu_btn{
+	position: absolute;
+	left:371px;
+	top: 0px;
+	width: 90px;
+	height: 30px;
+	background:url("../images/souquanwang-btn.png"); 
+	border-right: 0px 2px 2px 0px;
+	border:0;
+}
+/*状态栏右侧ul*/
+#status div.stat_mid ul.status_right_ul{
+	float: right;
+	width: 425px;
+}
+#status div.stat_mid ul.status_right_ul li{
+	float:left;
+	height: 45px;
+	line-height: 45px;
+}
+#status div.stat_mid ul.status_right_ul li a{
+	display: block;
+	padding: 0px 6px; 
+	font-size: 14px;
+	color: #E5E5E5;
+}
+#status div.stat_mid ul.status_right_ul li a:hover{
+	color: #699F00;
+}
+#status div.stat_mid ul.status_right_ul li:nth-child(4) a:before{
+	content:url("../images/nav-upload.png");
+    padding:5px 3px 0px 0px;
+}
+#status div.stat_mid ul.status_right_ul li:nth-child(4) a:hover:before{
+	content:url("../images/nav-upload-green.png");
+}
+/*banner样式*/
+#banner{
+	width: 100%;
+	height:580px;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	background: #000;
+}
+#banner div.scroImg{
+	width: 100%;
+	height: 410px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#banner div.scroImg a{
+	display: block;
+	width: 100%;
+	height: 410px;
+}
+#banner div.waibian{
+	width:247px;
+	height: 371px;
+	background:url("../images/site-focuslist_bg.png");
+	position: absolute;
+	z-index: 1;
+	top:40px;
+
+}
+#banner div.waibian ul.index_ul{
+	width:212px;
+	height:340px;
+	position: absolute;top:18px;
+	left:17px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#banner div.waibian ul.index_ul li{
+	width:212px;
+	height:34px;
+	text-align: center;
+}
+#banner div.waibian ul.index_ul li a{
+	font-size: 14px;
+	line-height: 34px;
+	height: 34px;
+	width: 212px;
+	color: #ccc;
+	display: block;
+}
+#banner div.waibian ul.index_ul li.hover a{
+	background: #74A900;
+	color:#fff;
+}
+/*================tvtype 类型部分*/
+#banner div.smollBanner{
+	width:1180px;
+	height: 160px;
+    display: block;
+    margin:5px auto;
+    border:1px solid #699F00;
+} 
+#banner div.smollBanner div.smollBan_mid_overflow{
+	width: 1120px;
+	height: 140px;
+	margin: 10px auto;
+    overflow: hidden;
+}
+#banner div.smollBanner div.smollBan_mid{
+	height: 140px;
+	width:800%;
+}
+#banner div.smollBanner div.smollBan_mid div.banImg1{
+	height: 140px;
+	float: left;
+}
+#banner div.smollBanner div.smollBan_mid div.banImg1 div.left{
+	width: 170px;
+	height: 140px;
+	margin-right: 20px;
+	float: left;
+}
+#banner div.smollBanner div.smollBan_mid div.banImg1 div.right{
+	width:0px;
+	height: 140px;
+	float: left;
+	margin-right:0px;
+	overflow: hidden;
+}
+/*笔记*/
+#biji{
+	width: 100%;
+}
+#biji div.biji_mid{
+	width: 1180px;
+	margin:585px auto;
+    background: #272822;
+    padding: 10px;
+    font-size:18px;
+    text-align: left;
+    color:#ddd;
+}
+
+
+

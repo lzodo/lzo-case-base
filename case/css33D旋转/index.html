@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	    *{
+	    	margin:0px;
+	    	padding: 0px;
+	    }
+		#M3d{
+			width:100%;
+			height:250px;
+			position: relative;
+			perspective:1000;
+			-webkit-perspective:1000;
+			-moz-perspective:1000;
+			-o-perspective:1000;
+		}
+		#M3d div.box{
+			transform-style:preserve-3D;/*设置为3D元素*/ 
+			-webkit-transform-style:preserve-3D;/*设置为3D元素*/ 
+			-moz-transform-style:preserve-3D;/*设置为3D元素*/ 
+			-o-transform-style:preserve-3D;/*设置为3D元素*/ 
+			position:absolute;
+			top:0px;
+			left:0px;
+			right: 0px;
+			bottom: 0px;
+			width: 110px;
+			height: 110px;
+			margin:auto;
+			/*transform-origin:50% 50%;*/
+			/*一对象中心旋转的关键是吧这个box放在三维对象的中间*/
+		}
+		#M3d div.box div{
+			width:100px;
+			height: 100px;
+			position: absolute;
+			opacity:0.7; 
+			text-align: center;
+			line-height: 100px;
+			color:#fff;
+			font-weight: bold;
+			font-size:35px;
+		}
+		#M3d div.box div.top{
+			background: #f00;
+			transform:rotateX(-90deg) translateY(-50px);
+			transform-origin:100px top;
+			-moz-transform:rotateX(-90deg) translateY(-50px);
+			-moz-transform-origin:100px top;
+			-webkit-transform:rotateX(-90deg) translateY(-50px);
+			-webkit-transform-origin:100px top;
+			-o-transform:rotateX(-90deg) translateY(-50px);
+			-o-transform-origin:100px top;
+		}
+		#M3d div.box div.bottom{
+			background: #ff0;
+	    	transform:rotateX(90deg) translateY(50px);
+			transform-origin:100px bottom;
+			-moz-transform:rotateX(90deg) translateY(50px);
+			-moz-transform-origin:100px bottom;
+			-webkit-transform:rotateX(90deg) translateY(50px);
+			-webkit-transform-origin:100px bottom;
+		}
+		#M3d div.box div.right{
+			background: #f0f;
+			transform:rotateY(-90deg) translateX(50px);
+			transform-origin:right top;
+			-moz-transform:rotateY(-90deg) translateX(50px);
+			-moz-transform-origin:right top;
+			-webkit-transform:rotateY(-90deg) translateX(50px);
+			-webkit-transform-origin:right top;
+			-o-transform:rotateY(-90deg) translateX(50px);
+			-o-transform-origin:right top;
+		}
+		#M3d div.box div.left{
+			background: #0ff;
+			transform:rotateY(90deg) translateX(-50px);
+			transform-origin:left top;
+			-moz-transform:rotateY(90deg) translateX(-50px);
+			-moz-transform-origin:left top;
+			-webkit-transform:rotateY(90deg) translateX(-50px);
+			-webkit-transform-origin:left top;
+			-ms-transform:rotateY(90deg) translateX(-50px);
+			-ms-transform-origin:left top;
+			-o-transform:rotateY(90deg) translateX(-50px);
+			-o-transform-origin:left top;
+		}
+		#M3d div.box div.before{
+			background: #00f;
+			transform:translateZ(-50px) ;
+			-webkit-transform:translateZ(-50px) ;
+			-moz-transform:translateZ(-50px) ;
+			-o-transform:translateZ(-50px) ;
+		}
+		#M3d div.box div.after{
+			background: #0f0;
+			transform:translateZ(50px) ;
+			-webkit-transform:translateZ(50px) ;
+			-moz-transform:-moz-translateZ(50px) ;
+			-o-transform:-moz-translateZ(50px) ;
+		}
+		/*css3动画要先写个规则*/
+		.animeteDuix{/*要动的对象的类*/
+			animation:myss 3s linear infinite;
+			-webkit-animation:myss 3s linear infinite;
+			-moz-animation:myss 3s linear infinite;
+			-o-animation:myss 3s linear infinite;
+		}
+		@keyframes myss{
+				from{
+					  transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+					} 
+				to{transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+		}
+		@-webkit-keyframes myss{/*规则名是myss*/
+				from{
+					  transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+					}  /*从哪里*/
+				to{transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}   /*到哪里去*/
+		}
+		@-moz-keyframes myss{
+				from{
+					 -moz-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+					} 
+				to{-moz-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+		}
+		@-o-keyframes myss{
+				from{
+					 -o-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+					} 
+				to{-o-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+		}
+		/*第二种写法*/
+		/*@-webkit-keyframes myst{
+				0%{transform:rotateX(0deg);width:300px; height:300px;}  /*从哪里*/
+				/*10%{background:#000;transform:rotateX(0deg);}
+				20%{background:#0ff;transform:rotateX(0deg);}
+				30%{background:#ff0;transform:rotateX(45deg);}
+				40%{background:#0f0;transform:rotateX(60deg);}
+				50%{transform:rotateX(90deg);}
+				100%{transform:rotateX(360deg);}  
+			}*/
+		#biji{
+			position: absolute;
+			top: 250px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			width: 800px;
+			background:rgba(0,0,0,0.2);
+			border-radius: 5px;
+			padding: 10px;
+			border:1px solid #ddd;
+			box-shadow: 0px 0px 5px #000;
+			text-align: center;
+			color:#fff;
+		}
+		#biji pre{
+			border:1px solid #fff;
+			background:rgba(255,255,255,0.2);
+			padding: 10px;
+			text-align: left;
+			color:#fff;
+			font-size: 17px;
+		}
+	</style>
+</head>
+<body>
+	<div id="M3d">
+	    <div class="box animeteDuix">
+	    	<div class="top">1</div>
+	    	<div class="bottom">2</div>
+	    	<div class="left">3</div>
+	    	<div class="right">4</div>
+	    	<div class="before">5</div>
+	    	<div class="after">6</div>
+	    </div>
+		<div id="biji">
+		<h1>3D图形的简单制做</h1>
+			<pre>1、perspective:600px; 3d环境的父级 可简单理解为视距
+
+2、构造3d环境(旋转这个3d环境的盒子带动你做好的3d图形)
+transform-style:preserve-3d(它的默认值是flat 也仅有这两个属性)
+
+3、给3d环境元素下的子元素rotate translate scale skew等效果调成自己想要的3d形状
+
+4、动画
+(1)先定个规则 @-webkit-keyframes 规则名{}
+   规则的写法一 @-webkit-keyframes 规则名{
+                   from{}to{} 从哪到哪
+                }
+   规则的写法二@-webkit-keyframes 规则名{
+                   10%{怎样怎样}
+                   20%{怎样怎样}
+                   n%{怎样怎样}。。100%{怎样怎样} 
+                }
+(2)使用 定义一个类 
+.类名{
+	 -webkit-animation:规则名 多少时间完成 速度曲线 延迟 播放次数等;
+ }
+ (3)把这个类给要这样动的元素就行了
+ //backface-visibility:hidden; 该属性定义当元素不面向屏幕时是否可见。
+			</pre>
+		</div>
+	</div>
+</body>
+</html>

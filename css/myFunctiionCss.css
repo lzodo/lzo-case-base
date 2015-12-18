@@ -1,0 +1,61 @@
+.clear{
+	clear: both;
+}
+/*切换背景*/
+#switchTab{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1;
+	display: none;
+}
+#switchTab ul{
+	width:1200px;
+	padding: 10px 0px 5px 10px;
+	border:1px solid #fff;
+	box-shadow: 0px 0px 3px #fff;
+	margin: 50px auto;
+}
+#switchTab ul li{
+	display: inline-block;
+	position: relative;
+	width:230px;
+	height:130px;
+	margin-right: 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+#switchTab ul li:before{
+	content:"";
+    width:230px;
+    height: 130px;
+    background: rgba(255,255,255,0.5);
+    display: block;
+    position: absolute;
+    top: 0px;
+    transition:top 1.3s,background 0.8s;
+
+}
+#switchTab ul li:hover:before{
+    top:-130px;
+    background: rgba(0,127,127,0);
+}
+/*下拉绳样式*/
+#xiala{
+	position: absolute;
+	right:100px;
+	top: 0px;
+	z-index: 2;
+	
+}
+#xiala img{
+	transition:transform 0.5s;
+}
+#xiala:hover img{
+	cursor: pointer;
+	transform:scale(1.3); 
+	transform-origin:50% 0%;
+}

@@ -1,0 +1,169 @@
+/*运维管理页样式*/
+div.ywglMain{
+	height: 680px;
+	width: 200px;
+	background: #ff0;
+	float: left;
+	background: url(../images/bgImg/mainBg.png);
+	padding: 1px;
+}
+/*-------------------导航部分样式----------------------------------*/
+div.ywglMain .nav {/*一级导航*/
+	width:100%;
+	height:35px;
+	background:rgba(0,0,0,0.8);
+	position: relative;
+	overflow: hidden;
+	border-bottom: 3px solid #1171BA;
+}
+div.ywglMain .nav div.nav_mid_left{
+	width: 100px;
+	height:35px;
+	background: rgba(255,255,255,0.5);
+	float: left;
+}
+div.ywglMain .nav ul.nav_mid_ul{
+	max-width:700px;
+	height:35px;
+	float: left;
+	position: relative;
+}
+div.ywglMain .nav ul.nav_mid_ul li{
+	height:48px;
+	float: left;
+	
+}
+div.ywglMain .nav ul.nav_mid_ul li a{
+	display: block;
+	padding:0px 10px;
+	height: 48px;
+	line-height:35px;
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+
+}
+div.ywglMain .nav ul.nav_mid_ul li.last{
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	display: none;
+}
+div.ywglMain .nav div.nav_mid_left{
+	text-align: center;
+	position: relative;
+}
+div.ywglMain .nav div.nav_mid_left a{
+	line-height:35px;
+	color:#fff;
+	font-size: 14px;
+
+}
+/*-------------------------选项内容*/
+div.ywglMain ul.ywgl_mid{/*一级导航内容*/
+	width: 100%;
+	height:642px;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li{
+	color: #000;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_ul{/*二级导航*/
+	width: 100%;
+	height: 30px;
+	background:rgba(0,0,0,0.8);
+	margin-top: 3px;
+    overflow: hidden;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_ul li.sjgl_li{
+	float: left;
+	padding:0px 22px;
+	line-height: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_ul li.sjgl_li:hover{
+	background:rgba(0,0,0,0.5);
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_ul li.sjgl_li.hover{
+	background:#EA5703;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_mid{/*二级导航内容*/
+   width: 100%;
+   height: 607px;
+}
+div.ywglMain ul.ywgl_mid li.ywgl_li ul.sjgl_mid li.sjgl_mid_li{
+   max-width:10000px;
+   height:603px;
+   display: none;
+   color: #000;
+   border:2px solid #EA5703;
+   padding: 1px;
+}
+/*所有事件 part1*/
+ul.sjgl_mid li.sjgl_mid_li div.form{
+   max-width: 100%;
+   min-width: 950px;
+   height: 80px;
+   background:#333 url("../images/bgImg/bgimg.png");
+   color:#fff;
+   font-size:14px;
+   padding-left:17px;
+  border-bottom:1px solid #585858;
+}
+ul.sjgl_mid li.sjgl_mid_li div.form input.inp{
+	margin:5px  20px;
+	width: 202px;
+	height: 25px;
+	color: #ccc;
+	background:url('../images/bgImg/inputBg.png');
+	border:1px solid #4e4e4e;
+}
+ul.sjgl_mid li.sjgl_mid_li div.form input.text{
+	text-indent:7px;
+}
+ul.sjgl_mid li.sjgl_mid_li div.form input.btn{
+	width:89px;
+	height:25px;
+	border:none;
+	background:url('../images/btnbg.png');
+	line-height: 25px;
+	background-size: cover;
+	margin-top: 5px;
+	color:#fff;
+}
+ul.sjgl_mid li.sjgl_mid_li div.form input.btn.ss{
+	margin:0px 24px 0px 65px;
+}
+/*事件信息*/
+ul.sjgl_mid li.sjgl_mid_li p.eventInfo{
+	width: 100%;
+	height: 30px;
+	text-indent:27px;
+	line-height: 30px;
+	background:url("../images/ywgl_sjxx.jpg");
+	margin-top: 1px;
+	padding-top:5px;
+	border-bottom:1px solid #ccc;
+	font-size: 15px;
+	position: relative;
+}
+ul.sjgl_mid li.sjgl_mid_li p.eventInfo span{
+	width: 5px;
+	height:20px;
+	position: absolute;
+	top:10px;
+	left:16px;
+	background: #EA5703;
+} 
+/*表格*/
+ul.sjgl_mid li.sjgl_mid_li table.eventMinute{
+	width: 100%;
+	height:485px;
+}
+ul.sjgl_mid li.sjgl_mid_li table.eventMinute tr td{
+	border:1px solid #ccc;
+}
+

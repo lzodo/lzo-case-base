@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>苹果菜单效果</title>
+	<style type="text/css">
+		*{margin:0px;padding: 0px;}
+		body{
+			background: #ccc;
+		}
+		#warp{
+			position: absolute;
+			bottom: 10px;
+			left:38%;
+		}
+		#warp img{
+			width:64px;
+		}
+	</style>
+</head>
+<body>
+	<div id="warp">
+		<img src="img/1.png" />
+		<img src="img/2.png" />
+		<img src="img/3.png" />
+		<img src="img/4.png" />
+		<img src="img/5.png" />
+	</div>
+</body>
+<script type="text/javascript">
+	var warp=document.getElementById("warp");
+	var img=warp.getElementsByTagName('img');
+    document.onmousemove=function(e){
+	    var e=e||window.event;
+		for(var i=0;i<img.length;i++){
+			var imgX=img[i].offsetLeft+warp.offsetLeft+img[i].offsetWidth/2;
+			var imgY=img[i].offsetTop+warp.offsetTop+img[i].offsetHeight/2;
+			//循环每一个图片获取图片的中心点
+	        var dx=e.clientX-imgX;
+	        var dy=e.clientY-imgY;
+	        //获取鼠标与每一个图片中心的的对边和邻边的距离
+	        var scale=Math.sqrt(Math.pow(dx,2)+Math.pow(dy,2));
+	        //利用沟谷定了计算出斜边 也就是鼠标与中心点的距离
+	        scale=scale/300;//因为离中心点越近图片要越大 所以要去反比 先缩小
+	        if (scale>0.5){
+	        	scale=0.5
+	        };//让宽度不小于50
+	        scale=1-scale;//取反比
+	        img[i].style.width=scale*100+"px";
+	        img[i].style.height=scale*100+"px";
+	         //设置图片的宽高
+        }
+	}
+</script>
+</script>
+</html>
