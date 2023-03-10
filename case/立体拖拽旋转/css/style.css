@@ -1,57 +1,67 @@
-*{
-	margin:0px;
-	padding: 0px;
-	border:0px;
-	list-style: none;
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
 }
-body{
-	background: #000;
+
+body {
+    background: #000;
 }
-img{
-	display: block;
+
+img {
+    display: block;
 }
-#warp{
-	width:120px;
-	height: 174px;
-	border:1px solid #ccc;
-	position: absolute;
-	left: 0px;
-	top: 150px;
-	right: 0px;
-	margin: auto;
-	transform-style:preserve-3d;
-	transform:perspective(800px) rotateX(-15deg) rotateY(0deg);
-	/*perspective(800px)写在这上面当对象远近变化是视觉效果也会变化*/
+
+#warp {
+    width: 120px;
+    height: 174px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    right: 0px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: perspective(800px) rotateX(-15deg) rotateY(0deg);
+    /*perspective(800px)写在这上面当对象远近变化是视觉效果也会变化*/
 }
-#warp p.diban{
-	width:1000px;
-	height:1000px;
-	
+
+#warp p.diban {
+    width: 1000px;
+    height: 1000px;
+
     border-radius: 50%;
-	position: absolute;
-	left:-440px;
-	top:-413px;
-	transform:rotateX(90deg) translateZ(-87px);
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#323232+0,000000+100&1+0,0.01+100 */
-background: -moz-radial-gradient(center,1000px 1000px, rgba(50,50,50,1) 0%, rgba(0,0,0,0.01) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center,1000px 1000px, rgba(50,50,50,1) 0%,rgba(0,0,0,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(50,50,50,1) 0%,rgba(0,0,0,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#03000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: absolute;
+    left: -440px;
+    top: -413px;
+    transform: rotateX(90deg) translateZ(-87px);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#323232+0,000000+100&1+0,0.01+100 */
+    background: -moz-radial-gradient(center, 1000px 1000px, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.01) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, 1000px 1000px, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.01) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.01) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#323232', endColorstr='#03000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
-#warp ul li{
-	position: absolute;
-	width:120px;
-	height: 174px;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 0px 5px #fff;
-	transform-style:preserve-3d;
-    perspective:800px;
-	-webkit-box-reflect:below 25px -webkit-linear-gradient(top,rgba(0,0,0,0) 20%,rgba(0,0,0,.5) 100%);
+
+#warp ul li {
+    position: absolute;
+    width: 120px;
+    height: 174px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 5px #fff;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    -webkit-box-reflect: below 25px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .5) 100%);
 }
-#warp ul li p{
-	transform:rotateX(0deg) rotateY(0deg);
-	width: 120px;
-	height: 174px;
-	border:1px solid #ccc;
+
+#warp ul li p {
+    transform: rotateX(0deg) rotateY(0deg);
+    width: 120px;
+    height: 174px;
+    border: 1px solid #ccc;
 }
